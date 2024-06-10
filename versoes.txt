@@ -1,0 +1,1 @@
+Modificando o arquivo para verificar se o git reconhece a alteração.
