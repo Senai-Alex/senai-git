@@ -1,0 +1,42 @@
+import os
+
+opcao = None
+
+while (opcao != 'x'):
+    os.system('clear') or none 
+    print("\n==========================================")
+    print("Programa Tabuada \n\n")
+    print("Escolha uma das opções abaixo: ")
+    print("[ + ] para Adição")
+    print("[ - ] para Subtração")
+    print("[ * ] para Multiplicação")
+    print("[ / ] para Divisão")
+    print("\n [ x ] para Encerrar o programa \n\n")
+
+    opcao = input("Opção escolhida: ").lower()
+
+    print("\n===========================================")
+
+    if (opcao == 'x'):
+        continue
+    else:
+        if(opcao == '+' or opcao =='-')or(opcao=='*' or opcao=='/'):
+            numero = int(input("Informe qual será o operando: "))
+
+    for i in range(1,11):
+        if opcao=='+':
+            print(numero," + ",i," = ",numero+i)
+        elif opcao == '-':
+            if numero>i:
+                print(numero," - ",i," = ",numero-i)
+            else:
+                print(i," - ",numero," = ",i-numero)
+        elif opcao == '*':
+            print(numero," x ",i," = ",numero*i)
+        elif opcao == '/':
+            print(numero*i," / ",numero," = ",i)
+        else:
+            print("Opção Inválida! Tente novamente.")
+            break
+
+print("Sistema Encerrado")
